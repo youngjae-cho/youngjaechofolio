@@ -11,54 +11,44 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **M.S. in Industrial & Systems Engineering**, KAIST, 2022 – 2024
+  * Focus: Machine Learning, Bayesian Modeling, Multi-modal Learning
+  * Advisor: Professor Il-Chul Moon
+* **B.S. in Industrial & Systems Engineering**, KAIST, 2017 – 2022
+  * Focus: Statistics, Optimization, Machine Learning
 
-Work experience
+Work Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **ML Research Scientist**, Pyler (Oct 2025 – Present)
+  * Alternative military service
+  * Led first-author research on GAPO, a geometry-aware preference alignment method for LLMs (under review at ICML 2025)
+  * Designed and implemented mantis-bench, a unified benchmarking CLI for model inference performance and pipeline stability (throughput / serving load / end-to-end)
+  * Built a protocol-based engine abstraction supporting vLLM, Hugging Face, and synthetic fallback for GPU-less CI testing
+  * Implemented async load generation with metric aggregation (percentiles, error rates, token throughput) and automated pass/fail gate reports
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **ML Research Scientist**, Aiv Co. (Mar 2024 – Oct 2025)
+  * Alternative military service
+  * Developed data synthesis pipeline using diffusion models for industrial anomaly detection
+  * Built OCR end-to-end pipeline for steel plate letter recognition
+  * Optimized training and inference with Flash Attention, DeepSpeed, and TensorRT
+  * Developed MLOps platform for data synthesis service
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Machine Learning Frameworks**: PyTorch, TensorFlow, JAX, Scikit-Learn
+* **LLM Serving & Inference**: vLLM, Hugging Face Transformers
+* **Model Optimization**: ONNX, TensorRT, Flash Attention, DeepSpeed
+* **Serving & Infrastructure**: Nvidia Triton Server, MLOps Pipeline
+* **Benchmarking & Testing**: Typer, httpx (async), Pydantic, pytest, Locust
+* **Python Tooling**: NumPy, PyYAML, Rich, ruff
+* **Research Areas**: Bayesian Modeling, Generative Models, Active Learning, Multi-modal Learning, Anomaly Detection, LLM Preference Alignment
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
+
+Service and Leadership
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Academic Counseling Assistant, Department of Industrial & Systems Engineering, KAIST

@@ -1,36 +1,25 @@
 ---
-title: "mantis-bench: Unified LLM Benchmarking CLI"
-excerpt: "A unified benchmarking package for measuring model inference performance and pipeline stability across throughput, serving load, and end-to-end scenarios."
+title: "LLM Benchmarking CLI"
+excerpt: "Unified benchmarking tool for LLM inference performance and pipeline stability."
 collection: portfolio
 ---
 
-## Overview
+## Summary
 
-Designed and implemented **mantis-bench**, an integrated benchmarking package that standardizes throughput (QPS/latency), serving stress tests, and end-to-end pipeline stability under a single CLI interface.
+Built a unified CLI for LLM inference benchmarking across throughput, serving load, and end-to-end scenarios.
 
-## Architecture
+## What I Did
 
-**Pluggable Engine Abstraction**
-- Built a protocol-based engine adapter layer supporting multiple backends: vLLM, Hugging Face Transformers, and a synthetic engine fallback
-- The synthetic fallback enables reliable CI testing and reproducible benchmarking in GPU-less environments
-- Clean protocol-based design allows adding new engine backends with minimal code changes
+- Implemented pluggable engine adapters (vLLM, Hugging Face, synthetic fallback)
+- Built async load generation with latency/error/token-throughput metrics
+- Added JSON/CSV reports and CI-friendly pass/fail gate output
 
-**Async Load Generation & Metric Aggregation**
-- Implemented asynchronous load generation using httpx for realistic serving stress tests
-- Comprehensive metric aggregation: latency percentiles (p50/p95/p99), error rates, token throughput (tokens/sec), and QPS
-- Supports multiple benchmark scenarios in a single run: throughput measurement, serving load simulation, and end-to-end pipeline validation
+**Stack**: Python, Typer, httpx (async), Pydantic, pytest, Rich
 
-**Automated Reporting & Regression Tracking**
-- Multi-format artifact generation: JSON, CSV, and Rich terminal tables
-- Release-gate style pass/fail summaries for automated regression tracking
-- Designed for integration into CI/CD pipelines to catch performance regressions before deployment
+## Figure Placeholder
 
-## Tech Stack
+> Add image: `/images/portfolio/mantis-bench/architecture.png`  
+> Recommended content: CLI architecture and adapter structure.
 
-| Category | Tools |
-|----------|-------|
-| **Core** | Python, Typer, Pydantic, dataclasses |
-| **Async / Networking** | httpx (async), asyncio |
-| **Data & Reporting** | NumPy, PyYAML, Rich |
-| **Testing & Quality** | pytest, ruff |
-| **GPU / Serving** | PyTorch, vLLM, Hugging Face Transformers, Locust (optional) |
+> Add image: `/images/portfolio/mantis-bench/report-example.png`  
+> Recommended content: sample benchmark output/report screenshot.

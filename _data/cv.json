@@ -1,10 +1,11 @@
 {
   "basics": {
     "name": "Youngjae Cho",
+    "label": "ML Engineer",
     "email": "leon5760@gmail.com",
-    "phone": "",
-    "website": "",
-    "summary": "AI/ML Researcher & Engineer with full-stack ML experience — from theoretical research to production serving. M.S. from KAIST, with publications at ICML and AAAI.",
+
+"website": "https://www.linkedin.com/in/offonoff/",
+    "summary": "ML Engineer experienced in research, optimization, and production serving. M.S. from KAIST (ICML, AAAI).",
     "location": {
       "address": "",
       "postalCode": "",
@@ -17,30 +18,28 @@
   "work": [
     {
       "company": "Pyler",
-      "position": "ML Research Scientist",
+      "position": "ML Research Engineer",
       "website": "",
-      "startDate": "2025-10-01",
+      "startDate": "2025-10",
       "endDate": "",
-      "summary": "Alternative military service. ML research and engineering.",
+      "summary": "",
       "highlights": [
-        "Led first-author research on GAPO, a geometry-aware preference alignment method for LLMs (under review at ICML 2025)",
-        "Designed and implemented mantis-bench, a unified benchmarking CLI for model inference performance and pipeline stability",
-        "Built a protocol-based engine abstraction supporting vLLM, Hugging Face, and synthetic fallback for GPU-less CI testing",
-        "Implemented async load generation with metric aggregation and automated pass/fail gate reports"
+        "An unified LLM benchmarking CLI (throughput, latency, pipeline stability)",
+        "Engineered pluggable engine abstraction (vLLM, HF, synthetic fallback for GPU-less CI)",
+        "First-author research on GAPO — geometry-aware preference alignment for LLMs (under review)"
       ]
     },
     {
       "company": "Aiv Co.",
-      "position": "ML Research Scientist",
+      "position": "ML Research Engineer",
       "website": "",
-      "startDate": "2024-03-01",
-      "endDate": "2025-10-01",
-      "summary": "Alternative military service. Full-stack ML engineering from research to production.",
+      "startDate": "2024-03",
+      "endDate": "2025-10",
+      "summary": "",
       "highlights": [
-        "Developed data synthesis pipeline using diffusion models for industrial anomaly detection",
-        "Built OCR end-to-end pipeline for steel plate letter recognition with Triton inference",
-        "Optimized training and inference with Flash Attention, DeepSpeed, and TensorRT",
-        "Developed MLOps platform for data synthesis service"
+        "Built diffusion-based data synthesis pipeline for anomaly detection (F1: 0.30 → 0.67)",
+        "Enabled 2048x2048 training within 24GB via Flash Attention + DeepSpeed",
+        "Developed OCR pipeline with Triton serving, TensorRT optimization, and test-time augmentation"
       ]
     }
   ],
@@ -49,49 +48,37 @@
       "institution": "KAIST",
       "area": "Industrial & Systems Engineering",
       "studyType": "M.S.",
-      "startDate": "2022-03-01",
-      "endDate": "2024-02-01",
+      "startDate": "2022-03",
+      "endDate": "2024-02",
       "gpa": null,
-      "courses": ["Machine Learning", "Bayesian Modeling", "Multi-modal Learning"]
+      "courses": []
     },
     {
       "institution": "KAIST",
       "area": "Industrial & Systems Engineering",
       "studyType": "B.S.",
-      "startDate": "2017-03-01",
-      "endDate": "2022-02-01",
+      "startDate": "2017-03",
+      "endDate": "2022-02",
       "gpa": null,
-      "courses": ["Statistics", "Optimization", "Machine Learning"]
+      "courses": []
     }
   ],
   "skills": [
     {
-      "name": "ML Frameworks",
-      "keywords": ["PyTorch", "TensorFlow", "JAX", "Scikit-Learn"]
+      "name": "Optimization & Inference",
+      "keywords": ["TensorRT", "ONNX", "Flash Attention", "DeepSpeed", "CUDA Graph"]
     },
     {
-      "name": "LLM Serving & Inference",
-      "keywords": ["vLLM", "Hugging Face Transformers"]
+      "name": "Serving",
+      "keywords": ["Triton Inference Server", "vLLM", "Docker"]
     },
     {
-      "name": "Model Optimization",
-      "keywords": ["ONNX", "TensorRT", "Flash Attention", "DeepSpeed"]
+      "name": "Frameworks",
+      "keywords": ["PyTorch", "JAX", "Hugging Face"]
     },
     {
-      "name": "Serving & Infrastructure",
-      "keywords": ["Nvidia Triton Server", "MLOps Pipeline"]
-    },
-    {
-      "name": "Benchmarking & Testing",
-      "keywords": ["Typer", "httpx (async)", "Pydantic", "pytest", "Locust"]
-    },
-    {
-      "name": "Python Tooling",
-      "keywords": ["NumPy", "PyYAML", "Rich", "ruff"]
-    },
-    {
-      "name": "Research Areas",
-      "keywords": ["Bayesian Modeling", "Generative Models", "Active Learning", "Multi-modal Learning", "Anomaly Detection", "LLM Preference Alignment"]
+      "name": "Domains",
+      "keywords": ["Diffusion Models", "LLM Serving", "Anomaly Detection", "OCR"]
     }
   ],
   "languages": [],
@@ -99,92 +86,57 @@
   "references": [],
   "publications": [
     {
-      "name": "Learning Where It Matters: Geometric Anchoring for Robust Preference Alignment",
-      "publisher": "Under review at ICML 2025",
-      "releaseDate": "2025-06-01",
+      "name": "GAPO: Geometric Anchoring for Robust Preference Alignment",
+      "publisher": "Under review",
+      "releaseDate": "2025-06",
       "website": "",
-      "summary": "Proposed GAPO, a geometry-aware preference optimization framework that replaces fixed references with dynamic adversarial anchors for robust LLM alignment."
+      "summary": ""
     },
     {
-      "name": "Background-Aware Defect Generation for Robust Industrial Anomaly Detection",
+      "name": "Background-Aware Defect Generation for Industrial Anomaly Detection",
       "publisher": "Preprint",
-      "releaseDate": "2025-01-01",
+      "releaseDate": "2025-01",
       "website": "",
-      "summary": "Proposed a diffusion-based defect synthesis method that disentangles background and defect context for controllable anomaly generation."
+      "summary": ""
     },
     {
-      "name": "Make Prompts Adaptable: Bayesian Modeling for Vision-Language Prompt Learning with Data-Dependent Prior",
+      "name": "Make Prompts Adaptable: Bayesian Modeling for VL Prompt Learning",
       "publisher": "AAAI 2024",
-      "releaseDate": "2024-02-01",
+      "releaseDate": "2024-02",
       "website": "",
-      "summary": "Introduced Bayesian priors with data-dependent context vectors for robust vision-language prompt learning."
+      "summary": ""
     },
     {
       "name": "SAAL: Sharpness-Aware Active Learning",
       "publisher": "ICML 2023",
-      "releaseDate": "2023-07-01",
+      "releaseDate": "2023-07",
       "website": "",
-      "summary": "Proposed using maximally perturbed loss as an acquisition function for active learning, grounded in generalization theory."
-    },
-    {
-      "name": "Improving Group-based Robustness and Calibration via Ordered Risk and Confidence Regularization",
-      "publisher": "ICML 2022 Workshop on Spurious Correlations, Invariance and Stability",
-      "releaseDate": "2022-07-01",
-      "website": "",
-      "summary": "Developed regularization techniques for improving robustness and calibration in group-based settings."
-    },
-    {
-      "name": "Predict Sequential Credit Card Delinquency with VaDE-Seq2Seq",
-      "publisher": "IEEE SMC 2021",
-      "releaseDate": "2021-10-01",
-      "website": "",
-      "summary": "Applied variational deep embedding with Seq2Seq for sequential credit card delinquency prediction."
+      "summary": ""
     }
   ],
   "presentations": [],
   "teaching": [],
   "portfolio": [
     {
-      "name": "GAPO: Geometric Anchor Preference Optimization (ICML 2025 submission)",
-      "category": "portfolio",
-      "date": "2025-06-01",
+      "name": "LLM Benchmarking CLI",
+      "category": "engineering",
+      "date": "2025-12",
       "url": "",
-      "description": "First-author research on geometry-aware robust preference alignment for LLMs using dynamic adversarial anchors."
+      "description": "Unified benchmarking CLI with pluggable engine adapters and automated pass/fail reports."
     },
     {
-      "name": "mantis-bench: Unified LLM Benchmarking CLI",
-      "category": "portfolio",
-      "date": "2025-12-01",
+      "name": "Industrial Data Synthesis Pipeline",
+      "category": "engineering",
+      "date": "2024-03",
       "url": "",
-      "description": "Designed and implemented a unified benchmarking package for model inference performance and pipeline stability with pluggable engine adapters and automated reporting."
+      "description": "Diffusion-based synthesis with Flash Attention + DeepSpeed. F1: 0.30 → 0.67."
     },
     {
-      "name": "Data Synthesis for Industrial Anomaly Detection",
-      "category": "portfolio",
-      "date": "2024-03-01",
+      "name": "OCR Serving Pipeline",
+      "category": "engineering",
+      "date": "2024-06",
       "url": "",
-      "description": "Developed a diffusion-based data synthesis pipeline for generating realistic industrial defect samples, achieving significant detection performance gains."
-    },
-    {
-      "name": "OCR End-to-End Pipeline",
-      "category": "portfolio",
-      "date": "2024-06-01",
-      "url": "",
-      "description": "Built an end-to-end OCR pipeline for steel plate letter recognition with optimized Triton inference serving."
-    },
-    {
-      "name": "Bayesian Prompt Learning (AAAI 2024)",
-      "category": "portfolio",
-      "date": "2024-02-01",
-      "url": "",
-      "description": "Research on Bayesian modeling for vision-language prompt learning with data-dependent priors."
-    },
-    {
-      "name": "Sharpness-Aware Active Learning (ICML 2023)",
-      "category": "portfolio",
-      "date": "2023-07-01",
-      "url": "",
-      "description": "Research on sharpness-aware acquisition functions for active learning."
+      "description": "End-to-end OCR on Triton with TensorRT and test-time augmentation."
     }
   ]
 }

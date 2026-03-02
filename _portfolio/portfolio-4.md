@@ -1,31 +1,23 @@
 ---
-title: "Sharpness-Aware Active Learning (SAAL)"
-excerpt: "Novel active learning method using flat minima theory for efficient data acquisition (ICML 2023)."
+title: "SAAL: Sharpness-Aware Active Learning (ICML 2023)"
+excerpt: "Active learning via loss landscape geometry for efficient data acquisition."
 collection: portfolio
 ---
 
-## Overview
+## Summary
 
-Proposed Sharpness-Aware Active Learning (SAAL), a principled active learning framework that leverages loss landscape geometry to select the most informative samples for labeling.
+Designed an active learning method that selects informative samples using loss-landscape sharpness.
 
-## Motivation
+## What I Did
 
-Active learning aims to minimize labeling costs by selecting the most informative data points. Traditional acquisition functions lack theoretical grounding in generalization theory. We derived a connection between active learning and loss landscape sharpness.
+- Derived a sharpness-based acquisition objective
+- Used maximally perturbed loss for sample selection
+- Validated strong performance on standard active learning benchmarks
 
-## Methodology
+## Figure Placeholder
 
-**Generalization Bound**
+> Add image: `/images/portfolio/saal/acquisition-concept.png`  
+> Recommended content: intuition of perturbation-based acquisition.
 
-We established a generalization bound decomposition showing that the population loss can be bounded by components related to labeled data, unlabeled data, and the sharpness of the loss landscape.
-
-**Acquisition Function**
-
-SAAL uses the maximally perturbed loss as the acquisition score:
-
-*f_acq(x; model) = max_{perturbation} loss(x, y; theta + perturbation)*
-
-This selects samples where the model's predictions are most sensitive to parameter perturbations — indicating regions where more data would most improve generalization.
-
-## Results
-
-SAAL achieves state-of-the-art performance across standard active learning benchmarks by efficiently identifying samples that contribute most to learning flat, generalizable minima.
+> Add image: `/images/portfolio/saal/benchmark-results.png`  
+> Recommended content: method comparison chart.

@@ -1,31 +1,23 @@
 ---
-title: "Bayesian Prompt Learning for Vision-Language Models"
-excerpt: "Research on making vision-language prompt learning adaptable through Bayesian modeling with data-dependent priors (AAAI 2024)."
+title: "Bayesian Prompt Learning (AAAI 2024)"
+excerpt: "Vision-language prompt learning with data-dependent Bayesian priors."
 collection: portfolio
 ---
 
-## Overview
+## Summary
 
-Developed a novel Bayesian framework for vision-language prompt learning that addresses the fundamental challenge of aligning text and image feature spaces in models like CLIP.
+Proposed a Bayesian prompt-learning framework to improve alignment between text and image features in vision-language models.
 
-## Motivation
+## What I Did
 
-Neural network representations between text and image features are not inherently shared. Using text for image retrieval or evaluating text answers using images requires constructing a shared embedding space. Existing prompt learning methods suffer from biased text feature coverage, limiting their generalization.
+- Introduced data-dependent Bayesian priors for prompt adaptation
+- Optimized prompts with SVGD-based inference
+- Improved generalization to unseen data (base-to-new setting)
 
-## Research Questions & Solutions
+## Figure Placeholder
 
-| Question | Solution |
-|----------|----------|
-| How to create a common space between image and text features? | Optimize text features to cover the full image feature distribution |
-| How to retain CLIP robustness after adaptation? | Adapt text features to unseen image data via data-dependent priors |
-| How to train prompts efficiently? | Unconditional prompt learning with Bayesian inference |
+> Add image: `/images/portfolio/prompt-learning/method.png`  
+> Recommended content: prior network + context adaptation diagram.
 
-## Methodology
-
-- **Bayesian Prior Network**: Models data-dependent priors where context vectors are aware of image feature spaces
-- **SVGD Optimization**: Uses Stein Variational Gradient Descent as particle-based variational inference for prompt optimization
-- **Test-Time Adaptation**: Adapts context vectors to test inputs via prior maximization, handling distribution shifts
-
-## Results
-
-Achieved strong performance on Base-to-New generalization and ImageNet generalization benchmarks, effectively mitigating the typical performance trade-off between seen and unseen datasets through data-dependent prior adaptation.
+> Add image: `/images/portfolio/prompt-learning/results.png`  
+> Recommended content: seen/unseen benchmark comparison plot.

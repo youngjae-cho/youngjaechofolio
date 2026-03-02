@@ -13,9 +13,9 @@ title                    : "Youngjae Cho"
 title_separator          : "-"
 name                     : &name "Youngjae Cho"
 description              : &description "AI/ML Researcher | KAIST"
-url                      : "https://joyeongjae.github.io"
+url                      : "https://youngjae-cho.github.io"
 baseurl                  : "/youngjaechofolio"
-repository               : "joyeongjae/youngjaechofolio"
+repository               : "youngjae-cho/youngjaechofolio"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.

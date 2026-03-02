@@ -13,9 +13,9 @@ title                    : "Youngjae Cho"
 title_separator          : "-"
 name                     : &name "Youngjae Cho"
 description              : &description "AI/ML Researcher | KAIST"
-url                      : https://academicpages.github.io
-baseurl                  : ""
-repository               : "academicpages/academicpages.github.io"
+url                      : "https://joyeongjae.github.io"
+baseurl                  : "/youngjaechofolio"
+repository               : "joyeongjae/youngjaechofolio"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -65,7 +65,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : https://www.linkedin.com/in/offonoff/
+  linkedin         : offonoff
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

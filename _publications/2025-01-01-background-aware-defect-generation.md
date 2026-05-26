@@ -4,9 +4,10 @@ collection: publications
 category: manuscripts
 permalink: /publication/2025-background-aware-defect-generation
 excerpt: 'A diffusion-based framework that disentangles background and defect contexts to generate realistic anomaly samples for industrial inspection.'
-date: 2025-01-01
-venue: 'Preprint'
-citation: 'Youngjae Cho, Gwangyeol Kim, Sirojbek Safarov, Seongdeok Bang, Jaewoo Park. &quot;Background-Aware Defect Generation for Robust Industrial Anomaly Detection.&quot; <i>Preprint</i>.'
+date: 2024-11-25
+venue: 'arXiv preprint'
+paperurl: 'https://arxiv.org/abs/2411.16767'
+citation: 'Youngjae Cho, Gwangyeol Kim, Sirojbek Safarov, Seongdeok Bang, Jaewoo Park. &quot;Background-Aware Defect Generation for Robust Industrial Anomaly Detection.&quot; <i>arXiv preprint arXiv:2411.16767</i>, 2024.'
 ---
 
 In industrial anomaly detection, anomaly samples are insufficient to train robust models. In real manufacturing scenarios, it is difficult to obtain certain defect types. This work proposes synthesizing anomaly samples using diffusion models while considering the interaction between defects and their backgrounds.

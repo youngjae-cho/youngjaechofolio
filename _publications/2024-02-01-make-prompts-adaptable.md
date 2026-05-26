@@ -6,7 +6,8 @@ permalink: /publication/2024-make-prompts-adaptable
 excerpt: 'Bayesian prompt learning with data-dependent priors for robust vision-language model adaptation.'
 date: 2024-02-01
 venue: 'AAAI Conference on Artificial Intelligence (AAAI 2024)'
-citation: 'Youngjae Cho, HeeSun Bae, Seungjae Shin, YeoDong Youn, Weonyoung Joo, Il-chul Moon. &quot;Make Prompts Adaptable: Bayesian Modeling for Vision-Language Prompt Learning with Data-Dependent Prior.&quot; <i>AAAI 2024</i>.'
+paperurl: 'https://arxiv.org/abs/2401.06799'
+citation: 'Youngjae Cho, HeeSun Bae, Seungjae Shin, YeoDong Youn, Weonyoung Joo, Il-Chul Moon. &quot;Make Prompts Adaptable: Bayesian Modeling for Vision-Language Prompt Learning with Data-Dependent Prior.&quot; <i>AAAI 2024</i>.'
 ---
 
 Vision-language models like CLIP create shared embedding spaces, but prompt learning methods often suffer from biased text feature coverage. This work introduces a Bayesian framework with data-dependent priors to enable robust prompt adaptation.

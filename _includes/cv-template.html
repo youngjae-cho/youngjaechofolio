@@ -76,8 +76,8 @@
       {% for education in cv.education %}
       <li class="cv-item">
         <div class="cv-item-header">
-          <div class="cv-item-title">{{ education.area }}</div>
-          <div class="cv-item-date">{{ education.endDate }}</div>
+          <div class="cv-item-title">{% if education.studyType %}{{ education.studyType }}, {% endif %}{{ education.area }}</div>
+          <div class="cv-item-date">{{ education.startDate | slice: 0, 4 }} – {{ education.endDate | slice: 0, 4 }}</div>
         </div>
         <div class="cv-item-content">
           <div class="cv-item-subtitle">{{ education.institution }}</div>
@@ -243,7 +243,11 @@
           {% endif %}
           {% if item.url %}
           <div class="cv-item-detail">
-            <a href="{{ item.url }}" target="_blank">View Project</a>
+            {% if item.url contains "://" %}
+              <a href="{{ item.url }}" target="_blank">View Project</a>
+            {% else %}
+              <a href="{{ item.url | prepend: site.baseurl }}">View Project</a>
+            {% endif %}
           </div>
           {% endif %}
         </div>

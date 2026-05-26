@@ -1,6 +1,6 @@
 ---
 title: "GAPO: Geometric Anchor Preference Optimization"
-excerpt: "Geometry-aware preference alignment for LLMs. First-author, under review at NeurIPS 2026."
+excerpt: "Geometry-aware preference alignment for LLMs. First-author."
 collection: portfolio
 header:
   teaser: portfolio/gapo/concept.jpg
@@ -10,7 +10,7 @@ header:
 
 Proposed **GAPO**, a geometry-aware preference optimization method for robust LLM alignment. GAPO replaces the static reference of DPO (and the reference-free margin of SimPO) with a *dynamic adversarial anchor* — a small worst-case perturbation of the current policy — and reweights each preference pair by its local geometric brittleness.
 
-> **Status:** First author, under review at NeurIPS 2026.
+> **First author** · [arXiv:2602.04909](https://arxiv.org/abs/2602.04909)
 
 ## The Idea
 

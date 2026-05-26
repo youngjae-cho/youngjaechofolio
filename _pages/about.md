@@ -19,7 +19,7 @@ I earned both my **M.S.** and **B.S.** in Industrial & Systems Engineering from 
 
 | Area | Direction |
 |---|---|
-| **LLM Preference Alignment** | Geometry-aware DPO/SimPO objectives, robust to noisy preferences — **[GAPO]({{ site.baseurl }}/publication/2025-gapo)** (under review at NeurIPS 2026) |
+| **LLM Preference Alignment** | Geometry-aware DPO/SimPO objectives, robust to noisy preferences — **[GAPO]({{ site.baseurl }}/publication/2025-gapo)** (arXiv preprint, 2026) |
 | **Vision-Language Models** | Bayesian, data-dependent priors that make prompts adapt to each input — **[APP]({{ site.baseurl }}/publication/2024-make-prompts-adaptable)** (AAAI 2024) |
 | **Active Learning** | Sharpness-aware acquisition that bridges SAM and active learning — **[SAAL]({{ site.baseurl }}/publication/2023-saal)** (ICML 2023) |
 | **Industrial Anomaly Detection** | Background-aware defect generation for robust manufacturing inspection (preprint) |
@@ -47,7 +47,7 @@ I earned both my **M.S.** and **B.S.** in Industrial & Systems Engineering from 
 ## Recent
 
 - **2026**  ·  🏆 **Winner — NVIDIA Nemotron Hackathon, Track B (Domain-Specialized Model)** with Pyler
-- **2026**  ·  GAPO under review at NeurIPS 2026
+- **2026**  ·  *GAPO — Geometric Anchoring for Robust Preference Alignment* (arXiv preprint, first author)
 - **2025**  ·  Background-Aware Defect Generation preprint
 - **2025**  ·  Joined Pyler as ML Research Scientist
 - **2024**  ·  AAAI 2024 — *Make Prompts Adaptable* (first author)

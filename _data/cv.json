@@ -1,11 +1,10 @@
 {
   "basics": {
     "name": "Youngjae Cho",
-    "label": "ML Engineer",
+    "label": "ML Research Scientist",
     "email": "leon5760@gmail.com",
-
-"website": "https://www.linkedin.com/in/offonoff/",
-    "summary": "ML Engineer experienced in research, optimization, and production serving. M.S. from KAIST (ICML, AAAI).",
+    "website": "https://www.linkedin.com/in/offonoff/",
+    "summary": "ML Research Scientist working on trustworthy & robust learning — alignment, prompts, active learning. M.S. from KAIST (ICML, AAAI).",
     "location": {
       "address": "",
       "postalCode": "",
@@ -18,27 +17,28 @@
   "work": [
     {
       "company": "Pyler",
-      "position": "ML Research Engineer",
+      "position": "ML Research Scientist",
       "website": "",
       "startDate": "2025-10",
       "endDate": "",
       "summary": "",
       "highlights": [
-        "An unified LLM benchmarking CLI (throughput, latency, pipeline stability)",
-        "Engineered pluggable engine abstraction (vLLM, HF, synthetic fallback for GPU-less CI)",
-        "First-author research on GAPO — geometry-aware preference alignment for LLMs (under review)"
+        "Winner — NVIDIA Nemotron Hackathon, Track B (Domain-Specialized Model), 2026",
+        "First-author research on GAPO — geometry-aware preference alignment for LLMs",
+        "Unified LLM benchmarking CLI (throughput, latency, pipeline stability)",
+        "Pluggable engine abstraction (vLLM, Hugging Face, synthetic fallback for GPU-less CI)"
       ]
     },
     {
       "company": "Aiv Co.",
-      "position": "ML Research Engineer",
+      "position": "ML Research Scientist",
       "website": "",
       "startDate": "2024-03",
       "endDate": "2025-10",
       "summary": "",
       "highlights": [
         "Built diffusion-based data synthesis pipeline for anomaly detection (F1: 0.30 → 0.67)",
-        "Enabled 2048x2048 training within 24GB via Flash Attention + DeepSpeed",
+        "Enabled 2048x2048 training within 24GB VRAM via Flash Attention + DeepSpeed",
         "Developed OCR pipeline with Triton serving, TensorRT optimization, and test-time augmentation"
       ]
     }
@@ -65,6 +65,10 @@
   ],
   "skills": [
     {
+      "name": "Research & Modeling",
+      "keywords": ["PyTorch", "TensorFlow", "JAX", "Hugging Face"]
+    },
+    {
       "name": "Optimization & Inference",
       "keywords": ["TensorRT", "ONNX", "Flash Attention", "DeepSpeed", "CUDA Graph"]
     },
@@ -73,12 +77,8 @@
       "keywords": ["Triton Inference Server", "vLLM", "Docker"]
     },
     {
-      "name": "Frameworks",
-      "keywords": ["PyTorch", "JAX", "Hugging Face"]
-    },
-    {
       "name": "Domains",
-      "keywords": ["Diffusion Models", "LLM Serving", "Anomaly Detection", "OCR"]
+      "keywords": ["LLM Alignment", "Vision-Language", "Active Learning", "Diffusion / Anomaly Detection"]
     }
   ],
   "languages": [],
@@ -86,56 +86,84 @@
   "references": [],
   "publications": [
     {
-      "name": "GAPO: Geometric Anchoring for Robust Preference Alignment",
-      "publisher": "Under review",
-      "releaseDate": "2025-06",
-      "website": "",
-      "summary": ""
+      "name": "Learning Where It Matters: Geometric Anchoring for Robust Preference Alignment",
+      "publisher": "arXiv preprint",
+      "releaseDate": "2026-02",
+      "website": "https://arxiv.org/abs/2602.04909",
+      "summary": "First author. Geometry-aware preference optimization for LLMs."
     },
     {
-      "name": "Background-Aware Defect Generation for Industrial Anomaly Detection",
-      "publisher": "Preprint",
-      "releaseDate": "2025-01",
-      "website": "",
-      "summary": ""
+      "name": "Background-Aware Defect Generation for Robust Industrial Anomaly Detection",
+      "publisher": "arXiv preprint",
+      "releaseDate": "2024-11",
+      "website": "https://arxiv.org/abs/2411.16767",
+      "summary": "First author. Diffusion-based defect synthesis with background-aware disentanglement."
     },
     {
-      "name": "Make Prompts Adaptable: Bayesian Modeling for VL Prompt Learning",
+      "name": "Make Prompts Adaptable: Bayesian Modeling for Vision-Language Prompt Learning with Data-Dependent Prior",
       "publisher": "AAAI 2024",
       "releaseDate": "2024-02",
-      "website": "",
-      "summary": ""
+      "website": "https://arxiv.org/abs/2401.06799",
+      "summary": "First author. Bayesian prompt learning with per-image data-dependent priors."
     },
     {
       "name": "SAAL: Sharpness-Aware Active Learning",
       "publisher": "ICML 2023",
       "releaseDate": "2023-07",
-      "website": "",
-      "summary": ""
+      "website": "https://proceedings.mlr.press/v202/kim23c.html",
+      "summary": "Co-first author. Active learning via loss-landscape sharpness."
     }
   ],
   "presentations": [],
   "teaching": [],
   "portfolio": [
     {
+      "name": "🏆 NVIDIA Nemotron Hackathon — Track B Winner",
+      "category": "award",
+      "date": "2026-01",
+      "url": "/portfolio/portfolio-7/",
+      "description": "Domain-Specialized Model track at NVIDIA Nemotron Developer Day Seoul 2026. Video-safety evaluation system on NVIDIA's lightweight Nemotron LLM."
+    },
+    {
+      "name": "GAPO: Geometric Anchor Preference Optimization",
+      "category": "research",
+      "date": "2026-02",
+      "url": "/portfolio/portfolio-5/",
+      "description": "Geometry-aware preference alignment for LLMs. First-author."
+    },
+    {
+      "name": "APP: Bayesian Prompt Learning (AAAI 2024)",
+      "category": "research",
+      "date": "2024-02",
+      "url": "/portfolio/portfolio-3/",
+      "description": "Vision-language prompt learning with data-dependent Bayesian priors."
+    },
+    {
+      "name": "SAAL: Sharpness-Aware Active Learning (ICML 2023)",
+      "category": "research",
+      "date": "2023-07",
+      "url": "/portfolio/portfolio-4/",
+      "description": "Active learning via loss-landscape geometry. Co-first author."
+    },
+    {
       "name": "LLM Benchmarking CLI",
       "category": "engineering",
       "date": "2025-12",
-      "url": "",
+      "url": "/portfolio/portfolio-6/",
       "description": "Unified benchmarking CLI with pluggable engine adapters and automated pass/fail reports."
     },
     {
       "name": "Industrial Data Synthesis Pipeline",
       "category": "engineering",
       "date": "2024-03",
-      "url": "",
+      "url": "/portfolio/portfolio-1/",
       "description": "Diffusion-based synthesis with Flash Attention + DeepSpeed. F1: 0.30 → 0.67."
     },
     {
       "name": "OCR Serving Pipeline",
       "category": "engineering",
       "date": "2024-06",
-      "url": "",
+      "url": "/portfolio/portfolio-2/",
       "description": "End-to-end OCR on Triton with TensorRT and test-time augmentation."
     }
   ]

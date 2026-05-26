@@ -19,9 +19,9 @@ I earned both my **M.S.** and **B.S.** in Industrial & Systems Engineering from 
 
 | Area | Direction |
 |---|---|
-| **LLM Preference Alignment** | Geometry-aware DPO/SimPO objectives, robust to noisy preferences — **[GAPO]({{ base_path }}/publication/2025-gapo)** (under review at NeurIPS 2026) |
-| **Vision-Language Models** | Bayesian, data-dependent priors that make prompts adapt to each input — **[APP]({{ base_path }}/publication/2024-make-prompts-adaptable)** (AAAI 2024) |
-| **Active Learning** | Sharpness-aware acquisition that bridges SAM and active learning — **[SAAL]({{ base_path }}/publication/2023-saal)** (ICML 2023) |
+| **LLM Preference Alignment** | Geometry-aware DPO/SimPO objectives, robust to noisy preferences — **[GAPO]({{ site.baseurl }}/publication/2025-gapo)** (under review at NeurIPS 2026) |
+| **Vision-Language Models** | Bayesian, data-dependent priors that make prompts adapt to each input — **[APP]({{ site.baseurl }}/publication/2024-make-prompts-adaptable)** (AAAI 2024) |
+| **Active Learning** | Sharpness-aware acquisition that bridges SAM and active learning — **[SAAL]({{ site.baseurl }}/publication/2023-saal)** (ICML 2023) |
 | **Industrial Anomaly Detection** | Background-aware defect generation for robust manufacturing inspection (preprint) |
 
 ---
@@ -54,7 +54,7 @@ I earned both my **M.S.** and **B.S.** in Industrial & Systems Engineering from 
 - **2024**  ·  Joined Aiv Co. as ML Research Scientist
 - **2023**  ·  ICML 2023 — *SAAL: Sharpness-Aware Active Learning* (co-first)
 
-→ See the [Publications]({{ base_path }}/publications/) and [Portfolio]({{ base_path }}/portfolio/) pages for the full record.
+→ See the [Publications]({{ site.baseurl }}/publications/) and [Portfolio]({{ site.baseurl }}/portfolio/) pages for the full record.
 
 ---
 

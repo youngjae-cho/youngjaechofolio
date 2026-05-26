@@ -3,7 +3,7 @@ title: "APP: Bayesian Prompt Learning (AAAI 2024)"
 excerpt: "Vision-language prompt learning with data-dependent Bayesian priors. First author."
 collection: portfolio
 header:
-  teaser: /images/portfolio/prompt-learning/few-shot.jpg
+  teaser: portfolio/prompt-learning/few-shot.jpg
 ---
 
 ## Summary
@@ -21,13 +21,13 @@ Proposed **Adaptive Prior Prompt (APP)**, a Bayesian prompt-learning framework f
 
 ## Few-Shot Classification across 11 Datasets
 
-![APP (red) outperforms CoOp, CoCoOp, PLOT, ProDA across 11 datasets and shot counts.](/images/portfolio/prompt-learning/few-shot.jpg)
+![APP (red) outperforms CoOp, CoCoOp, PLOT, ProDA across 11 datasets and shot counts.]({{ site.baseurl }}/images/portfolio/prompt-learning/few-shot.jpg)
 
 *APP consistently outperforms CoOp, CoCoOp, PLOT, and ProDA across 11 datasets (Caltech101, DTD, FGVC-Aircraft, Flowers102, Food101, OxfordPets, StanfordCars, SUN397, …). Gains are most pronounced in low-shot regimes.*
 
 ## Why It Works — Multi-Modal Prompt Distribution
 
-![UMap visualization showing APP captures multi-modal image feature semantics.](/images/portfolio/prompt-learning/umap.jpg)
+![UMap visualization showing APP captures multi-modal image feature semantics.]({{ site.baseurl }}/images/portfolio/prompt-learning/umap.jpg)
 
 *UMap visualization of image features and learned text-feature particles on EuroSAT. PLOT and ProDA's text features collapse to a narrow region (top), while APP's particles spread to cover the multi-modal image distribution (bottom). This is the geometric reason APP generalizes to unseen classes.*
 

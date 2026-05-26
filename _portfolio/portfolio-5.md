@@ -3,7 +3,7 @@ title: "GAPO: Geometric Anchor Preference Optimization"
 excerpt: "Geometry-aware preference alignment for LLMs. First-author, under review at NeurIPS 2026."
 collection: portfolio
 header:
-  teaser: /images/portfolio/gapo/concept.jpg
+  teaser: portfolio/gapo/concept.jpg
 ---
 
 ## Summary
@@ -14,7 +14,7 @@ Proposed **GAPO**, a geometry-aware preference optimization method for robust LL
 
 ## The Idea
 
-![DPO vs SimPO vs GAPO: a moving anchor that tracks the policy and reweights brittle pairs.](/images/portfolio/gapo/concept.jpg)
+![DPO vs SimPO vs GAPO: a moving anchor that tracks the policy and reweights brittle pairs.]({{ site.baseurl }}/images/portfolio/gapo/concept.jpg)
 
 *DPO uses a frozen reference (distributional mismatch as the policy drifts). SimPO has no anchor (unconstrained drift). GAPO's dynamic anchor tracks the policy and assigns smaller updates to brittle pairs.*
 
@@ -36,18 +36,18 @@ Proposed **GAPO**, a geometry-aware preference optimization method for robust LL
 
 ## Robustness to Label Noise
 
-![Reward accuracy stays high under both random and length-dependent label flips.](/images/portfolio/gapo/robustness.jpg)
+![Reward accuracy stays high under both random and length-dependent label flips.]({{ site.baseurl }}/images/portfolio/gapo/robustness.jpg)
 
 *GAPO degrades smoothly under both random and length-dependent label flips — Dr.DPO collapses below DPO past 20% flip rate. No explicit noise model is needed.*
 
 ## Diagnostic — Anchor Gap Identifies Brittle Pairs
 
-![Flipped preferences receive systematically smaller GAPO weights.](/images/portfolio/gapo/anchor-gap.jpg)
+![Flipped preferences receive systematically smaller GAPO weights.]({{ site.baseurl }}/images/portfolio/gapo/anchor-gap.jpg)
 
 *Mean GAPO weight on flipped pairs falls **16.9%** below clean pairs by end of the first epoch (left). Stratified by weight tier, the bottom-20% slice over-represents noisy preferences by **+13.1 pp** vs the top-20% (right).*
 
 ## Compute Efficiency
 
-![1 epoch of GAPO beats 2 epochs of SimPO at the same wall-clock budget.](/images/portfolio/gapo/wallclock.jpg)
+![1 epoch of GAPO beats 2 epochs of SimPO at the same wall-clock budget.]({{ site.baseurl }}/images/portfolio/gapo/wallclock.jpg)
 
 *At matched wall-clock budget, GAPO delivers **+3.6 pp** over an extended SimPO run on Mistral-7B Instruct.*

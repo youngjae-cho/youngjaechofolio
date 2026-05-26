@@ -1,25 +1,32 @@
 ---
 title: "OCR End-to-End Pipeline"
-excerpt: "Production OCR for steel plate recognition with Triton serving and TensorRT optimization."
+excerpt: "Production OCR for outdoor steel-plate recognition. Triton + TensorRT, with TTA-based robustness."
 collection: portfolio
 ---
 
 ## Summary
 
-Developed an outdoor steel-plate OCR pipeline from detection to DB matching, with a focus on low latency and stable inference.
+Built and shipped an outdoor steel-plate OCR pipeline — from detection to DB matching — focused on **low latency** and **stable inference** under harsh real-world conditions (rust, low light, motion blur).
+
+> **Role:** ML Research Scientist & Engineer at Aiv Co.
+
+## Pipeline
+
+```
+camera feed  →  detector  →  recognizer  →  DB matcher  →  result
+                  │             │              │
+                  │             │              └─ fuzzy lookup, alias rules
+                  │             └─ rotation- / padding-invariant TTA
+                  └─ ONNX → TensorRT, CUDA graph, warm-up
+```
 
 ## What I Did
 
-- Built end-to-end flow: detection → recognition → DB matching
-- Optimized runtime with ONNX→TensorRT conversion, CUDA graph, and warm-up
-- Improved robustness using test-time augmentation (rotation, padding)
+- **End-to-end flow** — detection → recognition → DB matching, designed as a single Triton-served pipeline
+- **Runtime optimization** — ONNX → TensorRT conversion, CUDA Graph capture, and explicit warm-up to stabilize first-batch latency
+- **Robustness via test-time augmentation** — rotation and padding TTA reduced misreads on rotated/cropped plates without retraining
+- **Operations** — health-checked deployment with versioned model registry and a small offline replay tool for regression catching
 
-**Stack**: Triton Inference Server, TensorRT, ONNX, Python
+## Stack
 
-## Figure Placeholder
-
-> Add image: `/images/portfolio/ocr/pipeline.png`  
-> Recommended content: full OCR system architecture.
-
-> Add image: `/images/portfolio/ocr/latency-comparison.png`  
-> Recommended content: before/after latency chart.
+NVIDIA Triton Inference Server · TensorRT · ONNX Runtime · CUDA Graphs · Python · Docker

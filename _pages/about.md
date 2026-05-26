@@ -2,26 +2,62 @@
 permalink: /
 title: "About"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I am Youngjae Cho, a passionate AI/ML Researcher with a creative spirit and a dedication to excellence. I earned my Master's degree from [KAIST](https://www.kaist.ac.kr/) (Korea Advanced Institute of Science and Technology) in Industrial & Systems Engineering, advised by Professor [Il-Chul Moon](https://scholar.google.com/citations?user=23AxIc0AAAAJ&hl=ko&oi=ao).
+> *I build learning systems that don't fall apart when supervision gets messy.*
 
-My research interests span **Bayesian modeling**, **multi-modal learning**, **active learning**, **generative models** for data synthesis, and **preference alignment** for large language models. I have published at top-tier venues including **ICML** and **AAAI**.
+I'm **Youngjae Cho**, an AI/ML Research Scientist working on **trustworthy machine learning** — making models that stay reliable when supervision is noisy, data is scarce, or distributions shift.
 
-After graduating, I worked as an ML Research Scientist & Engineer at Aiv Co., where I experienced the full stack of ML engineering — from theoretical research to production serving. I am currently at Pyler, continuing to bridge the gap between research and real-world deployment.
+I earned both my **M.S.** and **B.S.** in Industrial & Systems Engineering from [KAIST](https://www.kaist.ac.kr/), advised by Professor [Il-Chul Moon](https://scholar.google.com/citations?user=23AxIc0AAAAJ&hl=ko&oi=ao). I'm currently at **[Pyler](https://pyler.tech/)** as an ML Research Scientist (alternative military service), continuing alignment & robustness research with a foot in production.
 
-## Research Highlights
+---
 
-- **Robust Preference Alignment**: Geometric Anchor Preference Optimization (GAPO) — a geometry-aware framework for robust LLM alignment (Under review)
-- **Prompt Learning**: Bayesian modeling for vision-language prompt learning with data-dependent priors (AAAI 2024)
-- **Active Learning**: Sharpness-aware acquisition functions grounded in generalization theory (ICML 2023)
-- **Data Synthesis**: Background-aware defect generation using diffusion models for industrial anomaly detection
+## What I work on
 
-## What I Bring
+| Area | Direction |
+|---|---|
+| **LLM Preference Alignment** | Geometry-aware DPO/SimPO objectives, robust to noisy preferences — **[GAPO]({{ base_path }}/publication/2025-gapo)** (under review at NeurIPS 2026) |
+| **Vision-Language Models** | Bayesian, data-dependent priors that make prompts adapt to each input — **[APP]({{ base_path }}/publication/2024-make-prompts-adaptable)** (AAAI 2024) |
+| **Active Learning** | Sharpness-aware acquisition that bridges SAM and active learning — **[SAAL]({{ base_path }}/publication/2023-saal)** (ICML 2023) |
+| **Industrial Anomaly Detection** | Background-aware defect generation for robust manufacturing inspection (preprint) |
 
-- **Full-Stack ML Engineering**: From theoretical research to production-grade serving pipelines
-- **Data-Driven Thinking**: I convince stakeholders with measurable, data-driven results
-- **Optimization Expertise**: Flash attention, DeepSpeed, TensorRT, and Triton Server for efficient training & inference
+---
+
+## By the numbers
+
+- **6** peer-reviewed & preprint papers
+- **4** first-author works (including 1 co-first)
+- **2** top-tier venues: AAAI 2024, ICML 2023
+- **6+** years of ML research experience
+
+---
+
+## What I bring
+
+- **Full-stack ML engineering** — from theoretical research and proof-writing to production-grade serving pipelines
+- **Trustworthy ML** — alignment, robustness to noisy supervision, calibration, and generalization geometry
+- **Deployment optimization** — Flash Attention, DeepSpeed, ONNX, TensorRT, NVIDIA Triton Inference Server
+- **Frameworks** — PyTorch (primary), TensorFlow, JAX
+
+---
+
+## Recent
+
+- **2026**  ·  🏆 **Winner — NVIDIA Nemotron Hackathon, Track B (Domain-Specialized Model)** with Pyler
+- **2026**  ·  GAPO under review at NeurIPS 2026
+- **2025**  ·  Background-Aware Defect Generation preprint
+- **2025**  ·  Joined Pyler as ML Research Scientist
+- **2024**  ·  AAAI 2024 — *Make Prompts Adaptable* (first author)
+- **2024**  ·  Joined Aiv Co. as ML Research Scientist
+- **2023**  ·  ICML 2023 — *SAAL: Sharpness-Aware Active Learning* (co-first)
+
+→ See the [Publications]({{ base_path }}/publications/) and [Portfolio]({{ base_path }}/portfolio/) pages for the full record.
+
+---
+
+## Get in touch
+
+I'm always happy to talk about alignment, robust learning, or any of the work linked above. Reach me at **[leon5760@gmail.com](mailto:leon5760@gmail.com)** — or via the icons in the sidebar.

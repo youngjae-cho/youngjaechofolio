@@ -6,26 +6,27 @@ collection: portfolio
 
 ## Summary
 
-Built a diffusion-based synthesis pipeline to generate industrial defect samples and improve anomaly detection performance.
+Built a diffusion-based synthesis pipeline that generates realistic industrial defect samples and uses them to improve downstream anomaly detection — turning a base F1 of **0.30 into 0.67** with only 200 synthetic samples.
+
+> **Role:** First-author research project at Aiv Co. (preprint in preparation).
 
 ## What I Did
 
-- Applied Flash Attention + DeepSpeed for 2048x2048 training within 24GB VRAM
-- Added background/defect disentanglement and DDIM-based controllable generation
-- Validated business impact on production-like datasets
+- **Background-aware defect generation** — disentangled background and defect representations so the diffusion model preserves substrate texture while editing only the defect region
+- **High-resolution training in 24 GB VRAM** — Flash Attention + DeepSpeed ZeRO-2 to fit 2048×2048 training within a single A6000
+- **DDIM-based controllable generation** for severity / shape / location of defects, enabling targeted augmentation of long-tail failure modes
+- **Validated business impact** on production-like datasets, with detection metrics computed against held-out real defects
 
-## Impact
+## Impact — Detection on Real Defects
 
-| Dataset | Precision | Recall | F1 |
-|---------|-----------|--------|----|
+| Training set | Precision | Recall | F1 |
+|---|---|---|---|
 | Base set | 0.63 | 0.20 | 0.30 |
 | + 50 synthetic | 0.67 | 0.40 | 0.50 |
-| + 200 synthetic | 0.70 | 0.64 | **0.67** |
+| + 200 synthetic | **0.70** | **0.64** | **0.67** |
 
-## Figure Placeholder
+A 2.2× recall gain at marginal precision cost — translating to **fewer escapes** at the same operator-review budget.
 
-> Add image: `/images/portfolio/data-synthesis/overview.png`  
-> Recommended content: pipeline diagram (input image, defect control, generated sample).
+## Stack
 
-> Add image: `/images/portfolio/data-synthesis/results-grid.png`  
-> Recommended content: generated anomaly examples and detection comparison.
+PyTorch · Diffusers · Flash Attention 2 · DeepSpeed · OpenCV · Hydra

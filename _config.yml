@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "air" # Options: "default", "air", "sunrise", "mint", "dirt", "contrast"
 title                    : "Youngjae Cho"
 title_separator          : "-"
 name                     : &name "Youngjae Cho"
@@ -25,20 +25,21 @@ author:
   avatar           : "bio-photo.png"
   name             : "Youngjae Cho"
   pronouns         : # example: "he/him"  
-  bio              : "AI/ML Researcher & Engineer. Full-stack ML — from theory to production."
+  bio              : "ML Research Scientist. Trustworthy &amp; robust learning — alignment, prompts, active learning."
   location         : "South Korea"
   employer         : "Pyler"
   uri              : # URL
   email            : "leon5760@gmail.com" 
 
   # Academic websites
+  # Fill these to display matching icons in the sidebar. Each takes the FULL URL.
   academia         : # URL
-  arxiv            : # URL
-  googlescholar    : # URL
+  arxiv            : # URL e.g. https://arxiv.org/a/cho_y_1
+  googlescholar    : "https://scholar.google.com/citations?user=nAER4OcAAAAJ&amp;hl=ko"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : # URL
-  semantic         : # URL
+  orcid            : # URL e.g. https://orcid.org/0000-0000-0000-0000
+  semantic         : # URL e.g. https://www.semanticscholar.org/author/XXXX
   ssrn             : # URL
   pubmed           : # URL
   researchgate     : # URL
@@ -50,9 +51,9 @@ author:
   bitbucket        : # Username
   codepen          : # Username
   dribbble         : # Username
-  github           : # Username
-  kaggle           : # Username  
-  stackoverflow    : # Username    
+  github           : "youngjae-cho"
+  kaggle           : # Username
+  stackoverflow    : # Username
 
   # Social media
   artstation       : # Username
